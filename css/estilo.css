@@ -1,0 +1,77 @@
+
+/* body */
+body {
+    background-color: beige;
+}
+
+/* header */
+header {
+    position: sticky;
+    text-align: center;
+    border-style: groove;
+    background-color: #F2D7D5;
+    margin: 10px;
+    
+
+}
+.logo {
+    width: 20rem;
+
+}
+
+
+/* main */
+.imagenVisual {
+    width: 50%;
+    height: 20%;
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 10px 5px 3px;
+}
+.imagendeproducto{
+    width: 10rem;
+    box-shadow: 10px 5px 3px;
+    
+}
+.texto {
+    text-align: center;
+
+}
+.boton {
+    border-radius: 5px;
+    background-color: #EDBB99;
+    bottom: center black;
+}
+.links {
+    margin: 20px;
+}
+.promociones {
+    justify-content: space-evenly;
+}
+.div1{
+    margin: 3%;
+}
+.section1{
+    margin: 3%;
+}
+.segmento {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+    height: 200px;
+    width: 30%;
+    padding: 5px;
+    margin: 3px;
+}
+.whatsapp {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+.arroba {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}

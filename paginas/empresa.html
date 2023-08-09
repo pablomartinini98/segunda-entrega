@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
+
 <body class="container-fluid">
     <header class="navbar navbar-expand-lg">
         <nav class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logotipo.jpg" alt="logotipo"></a>
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logotipo.png" alt="logotipo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../paginas/catalogo.html">Catalogo</a>
                     </li>
@@ -39,10 +41,30 @@
         </nav>
     </header>
     <main>
-        <p class="empresa">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam in, consectetur repellendus voluptas labore officia facere debitis distinctio rerum nobis. Iste magni nihil facere possimus odit recusandae! Voluptatibus debitis soluta animi autem eius, recusandae doloribus modi deserunt omnis vero. Cupiditate excepturi quidem ut deserunt voluptas accusamus natus possimus est, et perferendis sint laboriosam ad accusantium numquam nihil fugit sequi quae distinctio mollitia tempora ex consectetur pariatur! Aperiam architecto vitae iste odit, iusto a quis adipisci dolorem voluptate sequi eius, tempore reiciendis quos! Cupiditate, rerum eos. Neque iste ipsa consequatur obcaecati nostrum maiores praesentium quod dolorem corrupti aliquid sapiente quasi reprehenderit, possimus quidem. Accusamus maxime deleniti similique aspernatur assumenda, mollitia quia rem reiciendis itaque repudiandae repellendus velit neque! Veniam ipsam laboriosam fuga, sint voluptas quas quod mollitia iure illum aperiam commodi voluptatem enim asperiores perspiciatis. Voluptates suscipit nemo cum repellat distinctio numquam mollitia earum nobis consequatur iste dolor temporibus eum culpa alias consectetur optio eligendi ipsa voluptas accusamus ipsam, voluptatibus id amet porro architecto! Modi dolores id perferendis eos iste officia velit blanditiis, culpa ullam quod libero ratione laboriosam quos possimus dolor recusandae distinctio dolore numquam ut optio cupiditate vitae praesentium vel illo! Quos, accusamus in libero dolor repellat quae perferendis.</p>
-        <form action="">
-            <label for="comentario" class="comentario"> Deje su comentario</label>
-            <input class="input" type="text" name="" id="">
+        <p class="empresa">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam in, consectetur repellendus
+            voluptas labore officia facere debitis distinctio rerum nobis. Iste magni nihil facere possimus odit
+            recusandae! Voluptatibus debitis soluta animi autem eius, recusandae doloribus modi deserunt omnis vero.
+            Cupiditate excepturi quidem ut deserunt voluptas accusamus natus possimus est, et perferendis sint
+            laboriosam ad accusantium numquam nihil fugit sequi quae distinctio mollitia tempora ex consectetur
+            pariatur! Aperiam architecto vitae iste odit, iusto a quis adipisci dolorem voluptate sequi eius, tempore
+            reiciendis quos! Cupiditate, rerum eos. Neque iste ipsa consequatur obcaecati nostrum maiores praesentium
+            quod dolorem corrupti aliquid sapiente quasi reprehenderit, possimus quidem. Accusamus maxime deleniti
+            similique aspernatur assumenda, mollitia quia rem reiciendis itaque repudiandae repellendus velit neque!
+            Veniam ipsam laboriosam fuga, sint voluptas quas quod mollitia iure illum aperiam commodi voluptatem enim
+            asperiores perspiciatis. Voluptates suscipit nemo cum repellat distinctio numquam mollitia earum nobis
+            consequatur iste dolor temporibus eum culpa alias consectetur optio eligendi ipsa voluptas accusamus ipsam,
+            voluptatibus id amet porro architecto! Modi dolores id perferendis eos iste officia velit blanditiis, culpa
+            ullam quod libero ratione laboriosam quos possimus dolor recusandae distinctio dolore numquam ut optio
+            cupiditate vitae praesentium vel illo! Quos, accusamus in libero dolor repellat quae perferendis.</p>
+        <h2>Deja tu comentario</h2>
+        <form action="procesar_comentario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Comentario">
         </form>
     </main>
     <footer>
@@ -53,10 +75,11 @@
         </ul>
     </footer>
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>

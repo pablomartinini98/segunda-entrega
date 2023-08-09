@@ -14,7 +14,7 @@
 <body class="container-fluid">
     <header class="navbar navbar-expand-lg">
         <nav class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logotipo.jpg" alt="logotipo"></a>
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logotipo.png" alt="logotipo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../paginas/catalogo.html">Catalogo</a>
                     </li>
@@ -43,15 +43,35 @@
     <main>
         <form action="">
             <div class="segmento ">
-                <img class="arroba" src="../img/arroba.jpg" alt="">
+                <img class="arroba" src="../img/email.png" alt="">
                 <label id="mail" for="email">zarafranlenceria@gmail.com </label>
             </div>
             <div class="segmento ">
-                <img class="whatsapp" src="../img/whatsaap.jpg" alt="">
+                <img class="whatsapp" src="../img/whatsapp.png" alt="">
                 <label id="numero" for="whatsapp"> 3811234567 </label>
             </div>
+            <div class="segmento ">
+                <img class="whatsapp" src="../img/instagram.png" alt="">
+                <label id="numero" for="whatsapp"> zarafranlenceria </label>
+            </div>
+            <div class="segmento ">
+                <img class="whatsapp" src="../img/facebook.png" alt="">
+                <label id="numero" for="whatsapp"> zarafranlenceria </label>
+            </div>
         </form>
-        
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
     </main>
     <footer>
         <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
